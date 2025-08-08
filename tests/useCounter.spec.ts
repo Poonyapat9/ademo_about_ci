@@ -1,5 +1,7 @@
 import { renderHook, act } from '@testing-library/react';
-import useCounter from '../useCounter';
+import useCounter from '../src/hooks/features/homepage/useCounter'; // Adjust the import path as necessary
+import { describe, it } from 'node:test';
+import { expect } from 'vitest'; // Add this import for expect
 
 describe('useCounter', () => {
     it('should initialize count to 0 and val to 1', () => {
